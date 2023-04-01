@@ -36,7 +36,7 @@ python3 aido.py "Exibir o conteúdo do arquivo texto.txt"
 
 This will convert the input "Exibir o conteúdo do arquivo texto.txt" into a valid Linux command using the OpenAI API.
 
-## If you really like this command 😜
+## If you really like this script 😜
 
 You can install it in your system by copying it to a directory in your $PATH, such as /usr/bin. To do this, run the following commands:
 
