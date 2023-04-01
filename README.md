@@ -4,6 +4,8 @@ Implementation of a (toy) command called `aido` (A.I. Do, like... sudo - Super U
 
 ![Example](./example.png)
 
+You can write the prompt in Brazilian Portuguese too!
+
 ## Setup
 
 Install dependencies:
