@@ -38,7 +38,7 @@ This will convert the input "Exibir o conteúdo do arquivo texto.txt" into a val
 
 ## If you really like this script 😜
 
-You can install it in your system by copying it to a directory in your $PATH, such as /usr/bin. To do this, run the following commands:
+You can install it in your system, as a command, by copying it to a directory in your `$PATH`, such as `/usr/bin`. To do this, run the following commands:
 
 ```
 chmod +x aido.py
@@ -53,5 +53,5 @@ After this, you can use it anywhere in your system:
 aido <Your prompt>
 ```
 
-Like in the last example, replace <Your prompt> with the natural language input that you want to convert into a Linux command.
+Like in the last example, replace `<Your prompt>` with the natural language input that you want to convert into a Linux command.
 
