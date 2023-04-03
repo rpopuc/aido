@@ -14,7 +14,7 @@ def edit(command):
     filename = os.path.join("/tmp", str(uuid.uuid4()))
     with open(filename, "w") as file:
         file.write(command)
-    os.system(f"mcedit {filename}")
+    os.system(f"nano {filename}")
     with open(filename, 'r') as file:
         command = file.read()
     menu(command.strip())
