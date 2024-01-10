@@ -20,6 +20,8 @@ def edit(command):
     menu(command.strip())
 
 def cancel(command):
+    print(Fore.GREEN + f"{command.strip()}\n" + Style.RESET_ALL)
+    print("Canceled")
     sys.exit()
 
 def menu(command):
@@ -45,15 +47,20 @@ def main(question):
             f"P: {question}\n"
     openai.api_key = os.getenv('OPENAI_API_KEY')
 
-    complete = openai.Completion.create(
-        engine="text-davinci-002",
-        prompt=prompt,
+    completion = openai.chat.completions.create(
+        model="gpt-3.5-turbo",
         temperature=0,
         max_tokens=150,
         frequency_penalty=0,
-        presence_penalty=0
+        presence_penalty=0,
+        messages=[
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
     )
-    command = complete.choices[0].text
+    command = completion.choices[0].message.content
     menu(command)
 
 init()
