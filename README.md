@@ -21,17 +21,9 @@ This scripts uses the following AI models providers:
 
 You must set the API keys for OpenAI and Anthropic in your config file before executing the script (see `aido.config` file).
 
-To use OpenAI API, you should create an OpenAI API account, obtain an API key, and set that key as an environment variable before executing it. To get your API key, access https://platform.openai.com/account/api-keys and set it in the environment using:
+To use OpenAI API, you should create an OpenAI API account, obtain an API key, and set that key as an environment variable before executing it. To get your API key, access https://platform.openai.com/account/api-keys.
 
-```
-export OPENAI_API_KEY=<your-api-key>
-```
-
-To use Anthropic API, you should create an Anthropic API account, obtain an API key, and set that key as an environment variable before executing it. To get your API key, access https://support.anthropic.com/en/articles/8114521-how-can-i-access-the-claude-api and set it in the environment using:
-
-```
-export ANTHROPIC_API_KEY=<your-api-key>
-```
+To use Anthropic API, you should create an Anthropic API account, obtain an API key, and set that key as an environment variable before executing it. To get your API key, access https://support.anthropic.com/en/articles/8114521-how-can-i-access-the-claude-api.
 
 To use Ollama API, you will need to install Ollama in your system and download a pre-trained model (`codegemma`, for example), following instructions at https://github.com/ollama/ollama.
 
