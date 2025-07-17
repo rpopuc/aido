@@ -10,6 +10,8 @@ class CommandExecutor:
 
     def run(self):
         print(self.command)
+        with open(os.path.expanduser("~/.bash_history"), "a") as file:
+            file.write(self.command + "\n")
         os.system(self.command)
 
     def edit(self):

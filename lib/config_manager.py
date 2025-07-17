@@ -13,4 +13,5 @@ class ConfigManager:
         if not os.path.exists(self.config_path):
             print(Fore.RED + "Config file not found in ~/.config/aido. Please create it based on " + self.program_folder + "/aido.config\n" + Style.RESET_ALL)
             sys.exit(1)
+        print ("Loading configuration from " + self.config_path)
         load_dotenv(self.config_path)

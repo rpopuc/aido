@@ -4,7 +4,7 @@ from lib.api_provider import APIProvider
 
 class OllamaProvider(APIProvider):
     def get_default_model(self):
-        return os.getenv('OLLAM_DEFAULT_MODEL') or 'codegemma'
+        return os.getenv('OLLAMA_DEFAULT_MODEL') or 'olmo2'
 
     def get_response(self, prompt):
         response = ollama.chat(
